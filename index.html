@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Lavorazioni Meccaniche</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #1a73e8;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s, background-color 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .card:active {
+            transform: scale(0.95);
+            background-color: #e8f0fe;
+        }
+        .card i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #1a73e8;
+        }
+        .card span {
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HUB TEST</h1>
+    <p>Seleziona il modulo tecnico</p>
+</header>
+
+<div class="grid-container">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSde7K4hRcW73K66pUalczvlTAPUCSCF3UroD5cSttAbBT51NQ/viewform" class="card">
+        <i class="fas fa-bore-hole"></i>
+        <span>Foratura MDI</span>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8LTzkv_0PbiI6DLbH8xybiclRWOXF5DfIgScMpdVbpwpPIw/viewform" class="card">
+        <i class="fas fa-scissors"></i>
+        <span>Fresatura MDI</span>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAyvHfsnPQE2grlo1-vDbalF_-2fWosQlKMxKtT351cTvVfw/viewform" class="card">
+        <i class="fas fa-circle-dot"></i>
+        <span>Foratura Inserti</span>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAyvHfsnPQE2grlo1-vDbalF_-2fWosQlKMxKtT351cTvVfw/viewform" class="card">
+        <i class="fas fa-layer-group"></i>
+        <span>Fresatura Inserti</span>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4p9XIRs6NuFVeb6pn1WJabjh7lmVHSgjt59fO312K4reoxA/viewform" class="card">
+        <i class="fas fa-rotate"></i>
+        <span>Tornitura</span>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQmSOK7WW7WVF0F5I4q_S240vnPrCzhRzvZXkcT02teYMgKw/viewform" class="card">
+        <i class="fas fa-faucet"></i>
+        <span>Maschiatura</span>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQmSOK7WW7WVF0F5I4q_S240vnPrCzhRzvZXkcT02teYMgKw/viewform" class="card">
+        <i class="fas fa-lines-leaning"></i>
+        <span>Filettatura</span>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1gTLGMsLuVr6PU9NbBx14kMw-R-7hhxC0-ZsQUEHsY1nqew/viewform" class="card">
+        <i class="fas fa-bullseye"></i>
+        <span>Barenatura</span>
+    </a>
+</div>
+
+<footer>
+    &copy; 2024 Gestione Moduli Tecnici
+</footer>
+
+</body>
+</html>
