@@ -17,15 +17,23 @@
         header {
             text-align: center;
             margin-bottom: 25px;
+            width: 100%;
+        }
+        /* Stile per il tuo logo */
+        .logo {
+            max-width: 150px; /* Regola la grandezza del logo qui */
+            height: auto;
+            margin-bottom: 10px;
         }
         h1 {
             color: #333;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin: 0;
+            text-transform: uppercase;
         }
         .grid-container {
             display: grid;
-            grid-template-columns: 1fr 1fr; /* Due colonne */
+            grid-template-columns: 1fr 1fr;
             gap: 12px;
             width: 100%;
             max-width: 500px;
@@ -34,7 +42,7 @@
             background: #ffffff;
             border: 1px solid #d1d5db;
             border-radius: 12px;
-            height: 100px; /* Altezza fissa per uniformità */
+            height: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -47,24 +55,17 @@
         }
         .card:active {
             background-color: #e8f0fe;
-            transform: scale(0.98);
         }
         .card span {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 700;
-            line-height: 1.2;
-            text-transform: uppercase;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 0.75rem;
-            color: #888;
         }
     </style>
 </head>
 <body>
 
 <header>
+    <img src="scritta logo paleari carlo.png" alt="Logo Aziendale" class="logo">
     <h1>HUB TEST TECNICI</h1>
 </header>
 
@@ -94,10 +95,6 @@
         <span>TEST BARENATURA</span>
     </a>
 </div>
-
-<footer>
-    Gestione Test Lavorazioni Meccaniche
-</footer>
 
 </body>
 </html>
