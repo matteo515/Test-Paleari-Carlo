@@ -15,8 +15,15 @@
             align-items: center;
         }
         header { text-align: center; margin-bottom: 25px; width: 100%; }
-        .logo { max-width: 150px; height: auto; margin-bottom: 10px; }
-        h1 { color: #333; font-size: 1.2rem; margin: 0; letter-spacing: 1px; text-transform: uppercase; }
+        
+        .logo { 
+            max-width: 200px; /* Ho aumentato un po' la grandezza vista la scritta */
+            height: auto; 
+            margin: 0 auto 15px auto; 
+            display: block;
+        }
+        
+        h1 { color: #333; font-size: 1.1rem; margin: 0; letter-spacing: 1px; text-transform: uppercase; opacity: 0.8; }
 
         .grid-container {
             display: grid;
@@ -37,14 +44,13 @@
             height: 80px;
             padding: 10px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: transform 0.1s, background-color 0.1s;
+            transition: transform 0.1s;
             border: 1px solid #dee2e6;
             text-align: center;
         }
 
         .card:active { transform: scale(0.96); background-color: #e8f0fe; }
 
-        /* Stile per il tastone in fondo (larghezza doppia) */
         .card-full {
             grid-column: span 2;
             background-color: #1a73e8;
@@ -52,8 +58,6 @@
             border: none;
             height: 90px;
         }
-
-        .card-full:active { background-color: #1557b0; }
 
         .card span {
             font-size: 0.85rem;
@@ -66,43 +70,20 @@
 <body>
 
 <header>
-    <img src="logo.png" alt="Logo" class="logo">
+    <img src="scritta logo paleari carlo.png" alt="Logo Paleari Carlo" class="logo">
     <h1>HUB TEST TECNICI</h1>
 </header>
 
 <div class="grid-container">
-    <a href="https://forms.gle/amPinj8ZcEJ3pJbh7" class="card">
-        <span>Foratura MDI</span>
-    </a>
-
-    <a href="https://forms.gle/EsyEme35PuiGt4rn7" class="card">
-        <span>Fresatura MDI</span>
-    </a>
-
-    <a href="https://forms.gle/cRAMk1oTTdEL9noQ6" class="card">
-        <span>Foratura Inserti</span>
-    </a>
-
-    <a href="https://forms.gle/hrxEE6U79sujb5Rc7" class="card">
-        <span>Fresatura Inserti</span>
-    </a>
-
-    <a href="https://forms.gle/37B5LJs7f13TxFaN6" class="card">
-        <span>Tornitura</span>
-    </a>
-
-    <a href="https://forms.gle/ySZCuPmLeYe4L5q76" class="card">
-        <span>Maschiatura</span>
-    </a>
-
-    <a href="https://forms.gle/n9zzdfz9sLUqYAcE8" class="card">
-        <span>Filettatura</span>
-    </a>
-
-    <a href="https://forms.gle/zbmMyq7SxRXLagVu5" class="card">
-        <span>Barenatura</span>
-    </a>
-
+    <a href="https://forms.gle/amPinj8ZcEJ3pJbh7" class="card"><span>Foratura MDI</span></a>
+    <a href="https://forms.gle/EsyEme35PuiGt4rn7" class="card"><span>Fresatura MDI</span></a>
+    <a href="https://forms.gle/cRAMk1oTTdEL9noQ6" class="card"><span>Foratura Inserti</span></a>
+    <a href="https://forms.gle/hrxEE6U79sujb5Rc7" class="card"><span>Fresatura Inserti</span></a>
+    <a href="https://forms.gle/37B5LJs7f13TxFaN6" class="card"><span>Tornitura</span></a>
+    <a href="https://forms.gle/ySZCuPmLeYe4L5q76" class="card"><span>Maschiatura</span></a>
+    <a href="https://forms.gle/n9zzdfz9sLUqYAcE8" class="card"><span>Filettatura</span></a>
+    <a href="https://forms.gle/zbmMyq7SxRXLagVu5" class="card"><span>Barenatura</span></a>
+    
     <a href="https://drive.google.com/drive/folders/19TcapMTX4jqs5C4wiTG9tiWrZJTveCIJ?usp=sharing" class="card card-full">
         <span>📂 Cartella TEST REPORT</span>
     </a>
