@@ -3,96 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Lavorazioni</title>
+    <title>Hub Test Meccanica</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f4f7f9;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f0f2f5;
             margin: 0;
             padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        header {
-            text-align: center;
-            margin-bottom: 25px;
-            width: 100%;
-        }
-        /* Stile per il tuo logo */
-        .logo {
-            max-width: 150px; /* Regola la grandezza del logo qui */
-            height: auto;
-            margin-bottom: 10px;
-        }
-        h1 {
-            color: #333;
-            font-size: 1.3rem;
-            margin: 0;
-            text-transform: uppercase;
-        }
+        header { text-align: center; margin-bottom: 25px; width: 100%; }
+        .logo { max-width: 150px; height: auto; margin-bottom: 10px; }
+        h1 { color: #333; font-size: 1.2rem; margin: 0; letter-spacing: 1px; text-transform: uppercase; }
+
         .grid-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 12px;
+            gap: 15px;
             width: 100%;
             max-width: 500px;
         }
+
         .card {
-            background: #ffffff;
-            border: 1px solid #d1d5db;
-            border-radius: 12px;
-            height: 100px;
+            background: white;
+            border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
             text-decoration: none;
-            color: #1a73e8;
+            color: #1a73e8; /* Colore blu per i link */
+            height: 80px; /* Altezza bilanciata per solo testo */
             padding: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            transition: background-color 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.1s, background-color 0.1s;
+            border: 1px solid #dee2e6;
         }
-        .card:active {
-            background-color: #e8f0fe;
+
+        .card:active { transform: scale(0.96); background-color: #e8f0fe; }
+
+        .card-full {
+            grid-column: span 2;
+            background-color: #1a73e8; /* Sfondo blu per distinguere il report */
+            color: white; /* Testo bianco */
+            border: none;
         }
+
+        .card-full:active { background-color: #1557b0; }
+
         .card span {
             font-size: 0.85rem;
             font-weight: 700;
+            text-align: center;
+            line-height: 1.2;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="scritta logo paleari carlo.png" alt="Logo Aziendale" class="logo">
+    <img src="logo.png" alt="Logo" class="logo">
     <h1>HUB TEST TECNICI</h1>
 </header>
 
 <div class="grid-container">
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSde7K4hRcW73K66pUalczvlTAPUCSCF3UroD5cSttAbBT51NQ/viewform" class="card">
-        <span>TEST FORATURA MDI</span>
+        <span>Foratura MDI</span>
     </a>
+
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8LTzkv_0PbiI6DLbH8xybiclRWOXF5DfIgScMpdVbpwpPIw/viewform" class="card">
-        <span>TEST FRESATURA MDI</span>
+        <span>Fresatura MDI</span>
     </a>
+
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAyvHfsnPQE2grlo1-vDbalF_-2fWosQlKMxKtT351cTvVfw/viewform" class="card">
-        <span>TEST FORATURA INSERTI</span>
+        <span>Foratura Inserti</span>
     </a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAyvHfsnPQE2grlo1-vDbalF_-2fWosQlKMxKtT351cTvVfw/viewform" class="card">
-        <span>TEST FRESATURA INSERTI</span>
+
+    <a href="https://forms.gle/HhaxoynotVZtTVHF8" class="card">
+        <span>Fresatura Inserti</span>
     </a>
+
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4p9XIRs6NuFVeb6pn1WJabjh7lmVHSgjt59fO312K4reoxA/viewform" class="card">
-        <span>TEST TORNITURA</span>
+        <span>Tornitura</span>
     </a>
+
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQmSOK7WW7WVF0F5I4q_S240vnPrCzhRzvZXkcT02teYMgKw/viewform" class="card">
-        <span>TEST MASCHIATURA</span>
+        <span>Maschiatura</span>
     </a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQmSOK7WW7WVF0F5I4q_S240vnPrCzhRzvZXkcT02teYMgKw/viewform" class="card">
-        <span>TEST FILETTATURA</span>
+
+    <a href="https://forms.gle/hrrk8QzMqgTLkQUUA" class="card">
+        <span>Filettatura</span>
     </a>
+
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1gTLGMsLuVr6PU9NbBx14kMw-R-7hhxC0-ZsQUEHsY1nqew/viewform" class="card">
-        <span>TEST BARENATURA</span>
+        <span>Barenatura</span>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1AFJ5bwiyCbutEH1UjPV4agT3NTPolYXT?usp=sharing" class="card card-full">
+        <span>📂 Cartella TEST REPORT</span>
     </a>
 </div>
 
